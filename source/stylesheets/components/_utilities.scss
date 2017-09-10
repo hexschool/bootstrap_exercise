@@ -1,4 +1,13 @@
 
+.box {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  margin: .25rem;
+  background-color: #f5f5f5;
+  border: 1px solid;
+}
+
 .bg-lighter {
   background-color: theme-color('light');
   // background-color: $gray-200;

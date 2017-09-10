@@ -97,6 +97,32 @@
         name: 'Tooltip',
         url: 'tooltips'
       }
+    ],
+    utilities: [
+      {
+        name: 'Borders',
+        url: 'borders'
+      },
+      {
+        name: 'Clearfix',
+        url: 'clearfix'
+      },
+      {
+        name: 'Close Icon',
+        url: 'close-icon'
+      },
+      {
+        name: 'Colors',
+        url: 'colors'
+      },
+      {
+        name: 'Display',
+        url: 'display'
+      },
+      {
+        name: 'Embed',
+        url: 'embed'
+      }
     ]
   } %>
   <body class="over-flow-x">
@@ -105,7 +131,7 @@
       <div class="row">
         <div class="col-md-3">
           <% if (menu) { %>
-            <%- include('sidebar/'+ menu +'_menu', {current: current, menus: menus[menu]}) %>
+            <%- include('sidebar/menu', {current: current, menus: menus[menu], path: menu}) %>
           <% } %>
         </div>
         <div class="col-md-9">      
