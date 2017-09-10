@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/stylesheets/all.css">
+  </head>
+  <% var menus = {
+    components: [
+      {
+        name: 'Alerts',
+        url: 'alerts'
+      },
+      {
+        name: 'Badge',
+        url: 'badge'
+      },
+      {
+        name: 'Breadcrumb',
+        url: 'breadcrumb'
+      },
+      {
+        name: 'Buttons',
+        url: 'buttons'
+      }
+    ]
+  } %>
+  <body class="over-flow-x">
+    <%- include partials/navbar %>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-3">
+          <% if (menu) { %>
+            <%- include('sidebar/'+ menu +'_menu', {current: current, menus: menus[menu]}) %>
+          <% } %>
+        </div>
+        <div class="col-md-9">      
+          <%- contents %> 
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
