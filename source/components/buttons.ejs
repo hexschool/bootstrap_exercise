@@ -23,3 +23,99 @@ engine: ejs
 <button type="button" class="btn 這裡">Light</button>
 <button type="button" class="btn 這裡">Dark</button>
 <button type="button" class="btn 這裡">Link</button>
+
+<h2>按鈕可運用不同標籤</h2>
+
+<p>將以下 input 替換上正確的 type</p>
+
+<a class="btn btn-primary" href="#" role="button">Link</a>
+<button class="btn btn-primary" type="submit">Button</button>
+<input class="btn btn-primary"  value="Input"><!-- type="button" -->
+<input class="btn btn-primary"  value="Submit"><!-- type="submit" -->
+<input class="btn btn-primary"  value="Reset"><!-- type="reset" -->
+
+<h2>外框按鈕</h2>
+
+<p>將以下按鈕替換成外框按鈕 (btn-outline-color)</p>
+
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<h2>大小</h2>
+
+<p>將以下按鈕替換成不同尺寸 (sm, lg)</p>
+
+<button type="button" class="btn btn-primary 這裡">Large button</button>
+<button type="button" class="btn btn-primary">button</button>
+<button type="button" class="btn btn-primary 這裡">Small button</button>
+
+<p>將以下按鈕替換上塊狀屬性 (block)</p>
+
+<button type="button" class="btn btn-primary btn-lg 這裡">Block level button</button>
+<button type="button" class="btn btn-secondary btn-lg 這裡">Block level button</button>
+
+
+<h2>啟用狀態</h2>
+
+<p>將以下按鈕加上 active</p>
+
+<a href="#" class="btn btn-primary 這裡" role="button" aria-pressed="true">Primary link</a>
+<a href="#" class="btn btn-secondary 這裡" role="button" aria-pressed="true">Link</a>
+
+<h2>停用狀態</h2>
+
+<p>將以下按鈕加上 disabled</p>
+
+<button type="button" class="btn btn-lg btn-primary" 這裡>Primary button</button>
+<button type="button" class="btn btn-secondary btn-lg" 這裡>Button</button>
+
+<a href="#" class="btn btn-primary btn-lg 這裡" role="button" aria-disabled="true">Primary link</a>
+<a href="#" class="btn btn-secondary btn-lg 這裡" role="button" aria-disabled="true">Link</a>
+
+
+<h2>JavaScript</h2>
+
+<h2>切換狀態</h2>
+
+<p>按鈕加上 data-toggle="button" 用來切換狀態</p>
+
+<button type="button" class="btn btn-outline-primary" 這裡 aria-pressed="false" autocomplete="off">
+  Single toggle
+</button>
+
+
+<h2>核取方塊和選項按鈕</h2>
+
+<p>按鈕群組加上 data-toggle="buttons" 啟用他們各自樣式的切換</p>
+
+<div class="btn-group" 這裡>
+  <label class="btn btn-secondary active">
+    <input type="checkbox" checked autocomplete="off"> Checkbox 1 (pre-checked)
+  </label>
+  <label class="btn btn-secondary">
+    <input type="checkbox" autocomplete="off"> Checkbox 2
+  </label>
+  <label class="btn btn-secondary">
+    <input type="checkbox" autocomplete="off"> Checkbox 3
+  </label>
+</div>
+
+<br>
+
+<div class="btn-group" 這裡>
+  <label class="btn btn-secondary active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+  </label>
+</div>
