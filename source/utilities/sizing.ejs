@@ -1,0 +1,32 @@
+---
+title: Sizing
+layout: ./source/_layout.ejs
+current: sizing
+menu: utilities
+engine: ejs
+---
+
+<p>將以下的 "這裡"，替換成 不同數值 使其顯示改變 (25, 50, 75, 100)</p>
+
+<div class="demo">
+  <div class="w-這裡 p-3" style="background-color: #eee;">Width 25%</div>
+  <div class="w-這裡 p-3" style="background-color: #eee;">Width 50%</div>
+  <div class="w-這裡 p-3" style="background-color: #eee;">Width 75%</div>
+  <div class="w-這裡 p-3" style="background-color: #eee;">Width 100%</div>
+
+  <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+    <div class="h-這裡 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 25%</div>
+    <div class="h-這裡 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 50%</div>
+    <div class="h-這裡 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 75%</div>
+    <div class="h-這裡 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 100%</div>
+  </div>
+</div>
+
+<hr>
+<p>mw, mh 分別代表 max-width: 100%; 和 max-height: 100%;</p>
+
+<div class="demo">
+  <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+    <div class="mh-100" style="width: 100px; height: 200px; background-color: rgba(0,0,255,0.1);">Max-height 100%</div>
+  </div>
+</div>
