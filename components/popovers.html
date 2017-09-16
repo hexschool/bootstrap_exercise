@@ -21,6 +21,9 @@
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
+        <a class="nav-link" href="/layout/media-object.html">Layout</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="/components/alerts.html">Components</a>
       </li>
       <li class="nav-item">
@@ -31,8 +34,9 @@
 </nav>
     <div class="container my-5">
       <div class="row">
-        <div class="col-md-3">
-          
+        
+          <div class="col-md-3">
+            
 <div class="list-group">
   
     
@@ -162,7 +166,8 @@
     
   
 </div>
-        </div>
+          </div>
+        
         <div class="col-md-9 post">      
           <!-- 練習開始 -->
           <h1 class="mt-0">Popovers</h1>
@@ -173,9 +178,9 @@
 
 <div class="demo">
   <script>
-  $(function () {
-    $('[data-toggle="popover"]').popover()
-  })
+  // $(function () {
+  //   $('[data-toggle="popover"]').popover()
+  // })
   </script>
 
   <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
@@ -186,20 +191,20 @@
 <p>將以下的 "目標"，替換成不同方向 (top, right, bottom, left)</p>
 
 <div class="demo">
-  <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="目標" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
     Popover on top
   </button>
 
-  <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="目標" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
     Popover on right
   </button>
 
-  <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="left" data-content="Vivamus
+  <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="目標" data-content="Vivamus
   sagittis lacus vel augue laoreet rutrum faucibus.">
     Popover on bottom
   </button>
 
-  <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="目標" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
     Popover on left
   </button>
 </div>
@@ -209,7 +214,7 @@
 使用 data-trigger="focus" 以便用戶進行下一次點擊時移除這個彈出提示框。
 
 <div class="demo">
-  <a tabindex="0" class="btn btn-lg btn-danger" data-trigger="focus" role="button" data-toggle="popover"  title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+  <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover"  title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
 </div>
  
         </div>

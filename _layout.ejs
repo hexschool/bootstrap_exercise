@@ -12,6 +12,12 @@
 
   </head>
   <% var menus = {
+    layout: [
+      {
+        name: 'Media object',
+        url: 'media-object'
+      },
+    ],
     components: [
       {
         name: 'Alerts',
@@ -169,9 +175,11 @@
     <%- include partials/navbar %>
     <div class="container my-5">
       <div class="row">
-        <div class="col-md-3">
-          <% if (menu) { %><%- include('sidebar/menu', {current: current, menus: menus[menu], path: menu}) %><% } %>
-        </div>
+        <% if (menu) { %>
+          <div class="col-md-3">
+            <%- include('sidebar/menu', {current: current, menus: menus[menu], path: menu}) %>
+          </div>
+        <% } %>
         <div class="col-md-9 post">      
           <!-- 練習開始 -->
           <h1 class="mt-0"><%- title %></h1>
