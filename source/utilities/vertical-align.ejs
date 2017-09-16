@@ -6,19 +6,40 @@ menu: utilities
 engine: ejs
 ---
 
-<p>將以下的 "這裡"，替換成不同垂直對其方式 (baseline, top, middle, text-top, text-bottom)</p>
+<p>將以下的 "目標"，替換成不同垂直對其方式 (baseline, top, middle, bottom, text-top, text-bottom)</p>
 
 <div class="demo">
   <table class="table" style="height: 200px;">
     <tbody>
       <tr>
-        <td class="align-這裡">baseline</td>
-        <td class="align-這裡">top</td>
-        <td class="align-這裡">middle</td>
-        <td class="align-這裡">bottom</td>
-        <td class="align-這裡">text-top</td>
-        <td class="align-這裡">text-bottom</td>
+        <td class="align-目標">baseline</td>
+        <td class="align-目標">top</td>
+        <td class="align-目標">middle</td>
+        <td class="align-目標">bottom</td>
+        <td class="align-目標">text-top</td>
+        <td class="align-目標">text-bottom</td>
       </tr>
     </tbody>
   </table>
 </div>
+
+<hr>
+
+<p>
+  <span class="align-baseline">baseline</span>
+  <span class="align-top">top</span>
+  <span class="align-middle">middle</span>
+  <span class="align-bottom">bottom</span>
+  <img src="http://lorempixel.com/100/100/food" alt="">
+  <span class="align-text-top">text-top</span>
+  <span class="align-text-bottom">text-bottom</span>
+</p>
+
+<p>
+  <img src="http://lorempixel.com/100/100/food" class="align-text-bottom" alt="">
+  <span>text-bottom</span>
+</p> 
+<p>
+  <img src="http://lorempixel.com/100/100/food" class="align-text-top" alt="">
+  <span>text-top</span>
+</p> 
