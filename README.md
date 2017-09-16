@@ -1,4 +1,4 @@
-# 六角學院 Gulp 範例
+# 六角學院 Bootstrap 練習
 
 ## 安裝環境
 
@@ -18,5 +18,3 @@ npm install
 bower install
 gulp
 ```
-
-[範例網站](https://hexschool.github.io/gulp-demo)。

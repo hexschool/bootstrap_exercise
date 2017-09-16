@@ -131,6 +131,11 @@ gulp.task('browserSync', function () {
   })
 });
 
+gulp.task('deploy', function () {
+  return gulp.src('./public/**/*')
+    .pipe($.ghPages())
+})
+
 gulp.task('watch', function () {
   gulp.watch(['./source/stylesheets/**/*.sass', './source/stylesheets/**/*.scss'], ['sass']);
   // gulp.watch(['./source/**/*.jade'], ['jade']);
