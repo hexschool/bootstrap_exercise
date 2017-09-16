@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="477px" viewBox="0 0 1440 477" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>banner_bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <pattern id="pattern-1" width="20.25" height="11.25" x="-20.25" y="-10.25" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-2" transform="scale(0.75,0.75)"></use>
+        </pattern>
+        <image id="image-2" width="27" height="15" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAeCAIAAADo2HrRAAAABGdBTUEAA1teXP8meAAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAIZJREFUWAntk8EJACEMBNUW7L/DpAZPTi4fn7nHDsSHhoAyZJ1uZq21Oefez3L3Xeh0xgeme/a1li7dSwaYYiH+8YfG9vcoHK+pdQBBl9HxexIFIGgCopq/Nw9gimV0QuS4CgiagHgbpNYBTLGMDi0TBSBoAqKavzcPYIpldELkuAoIGoD4AFZp8h3XuB54AAAAAElFTkSuQmCC"></image>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="banner_bg">
+            <rect id="Rectangle-8" fill="url(#pattern-1)" x="0" y="1" width="1440" height="477"></rect>
+            <circle id="Oval-6-Copy-3" fill-opacity="0.7" fill="#CAA8FF" cx="94" cy="388" r="10"></circle>
+            <circle id="Oval-6-Copy-4" fill-opacity="0.7" fill="#CAA8FF" cx="988" cy="138" r="10"></circle>
+            <circle id="Oval-6-Copy" fill-opacity="0.7" fill="#CAA8FF" cx="1048.5" cy="429.5" r="6.5"></circle>
+            <circle id="Oval-6-Copy-2" fill-opacity="0.7" fill="#CAA8FF" cx="330.5" cy="177.5" r="6.5"></circle>
+            <g id="Group-21" opacity="0.6" transform="translate(561.000000, 172.000000)">
+                <rect id="Rectangle-20" fill="#CAA8FF" transform="translate(107.756250, 107.756250) rotate(-45.000000) translate(-107.756250, -107.756250) " x="31.5610749" y="31.5610749" width="152.39035" height="152.39035"></rect>
+                <rect id="Rectangle-20-Copy" stroke="#CAA8FF" transform="translate(116.756250, 107.756250) rotate(-45.000000) translate(-116.756250, -107.756250) " x="41.0610749" y="32.0610749" width="151.39035" height="151.39035"></rect>
+            </g>
+            <path d="M671.5,242.5 L673,244" id="Line" stroke="#979797" stroke-linecap="square"></path>
+            <path d="M803.0709,1.9291003 L469.758473,335.241527" id="Line-2" stroke-opacity="0.7" stroke="#CAA8FF" stroke-width="2" stroke-linecap="square"></path>
+            <path d="M324.911299,287.088701 L134.758473,477.241527" id="Line-2-Copy" stroke-opacity="0.7" stroke="#CAA8FF" stroke-width="2" stroke-linecap="square"></path>
+            <path d="M1439.13117,81.8688254 L1321.75847,199.241527" id="Line-2-Copy-4" stroke-opacity="0.7" stroke="#CAA8FF" stroke-width="2" stroke-linecap="square"></path>
+            <path d="M-0.868825443,81.8688254 L80.3186003,0.681399673" id="Line-2-Copy-5" stroke-opacity="0.7" stroke="#CAA8FF" stroke-width="2" stroke-linecap="square"></path>
+            <path d="M1187.13117,421.868825 L1131.49219,477.507808" id="Line-2-Copy-3" stroke-opacity="0.7" stroke="#CAA8FF" stroke-linecap="square"></path>
+            <polygon id="Triangle-Copy" stroke-opacity="0.7" stroke="#CAA8FF" stroke-width="2" transform="translate(432.192388, 445.192388) rotate(-135.000000) translate(-432.192388, -445.192388) " points="432.192388 438.692388 438.692388 451.692388 425.692388 451.692388"></polygon>
+        </g>
+    </g>
+</svg>

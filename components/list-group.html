@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List Group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/stylesheets/all.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  </head>
+  
+  <body class="over-flow-x">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">Bootstrap 練習手冊</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/components/alerts.html">Components</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/utilities/borders.html">Utilities</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-3">
+          
+<div class="list-group">
+  
+    
+      <a href="/components/alerts.html"  class="list-group-item">
+        Alerts
+      </a>
+    
+  
+    
+      <a href="/components/badge.html"  class="list-group-item">
+        Badge
+      </a>
+    
+  
+    
+      <a href="/components/breadcrumb.html"  class="list-group-item">
+        Breadcrumb
+      </a>
+    
+  
+    
+      <a href="/components/buttons.html"  class="list-group-item">
+        Buttons
+      </a>
+    
+  
+    
+      <a href="/components/button-group.html"  class="list-group-item">
+        Button Group
+      </a>
+    
+  
+    
+      <a href="/components/card.html"  class="list-group-item">
+        Card
+      </a>
+    
+  
+    
+      <a href="/components/carousel.html"  class="list-group-item">
+        Carousel
+      </a>
+    
+  
+    
+      <a href="/components/collapse.html"  class="list-group-item">
+        Collapse
+      </a>
+    
+  
+    
+      <a href="/components/dropdowns.html"  class="list-group-item">
+        Dropdowns
+      </a>
+    
+  
+    
+      <a href="/components/forms.html"  class="list-group-item">
+        Forms
+      </a>
+    
+  
+    
+      <a href="/components/input-group.html"  class="list-group-item">
+        Input Group
+      </a>
+    
+  
+    
+      <a href="/components/jumbotron.html"  class="list-group-item">
+        Jumbotron
+      </a>
+    
+  
+    
+      <a href="/components/list-group.html"  class="list-group-item active">
+        List Group
+      </a>
+    
+  
+    
+      <a href="/components/modal.html"  class="list-group-item">
+        Modal
+      </a>
+    
+  
+    
+      <a href="/components/nav.html"  class="list-group-item">
+        Nav
+      </a>
+    
+  
+    
+      <a href="/components/navbar.html"  class="list-group-item">
+        Navbar
+      </a>
+    
+  
+    
+      <a href="/components/pagination.html"  class="list-group-item">
+        Pagination
+      </a>
+    
+  
+    
+      <a href="/components/popovers.html"  class="list-group-item">
+        Popovers
+      </a>
+    
+  
+    
+      <a href="/components/progress.html"  class="list-group-item">
+        Progress
+      </a>
+    
+  
+    
+      <a href="/components/scrollspy.html"  class="list-group-item">
+        Scrollspy
+      </a>
+    
+  
+    
+      <a href="/components/tooltips.html"  class="list-group-item">
+        Tooltip
+      </a>
+    
+  
+</div>
+        </div>
+        <div class="col-md-9 post">      
+          <!-- 練習開始 -->
+          <h1 class="mt-0">List Group</h1>
+          
+<h2>範例</h2>
+
+<p>將以下的 "目標"，替換成 list-group 使其顯示正確</p>
+
+<div class="demo">
+  <ul class="目標">
+    <li class="目標-item active">Cras justo odio</li>
+    <li class="目標-item disabled">Dapibus ac facilisis in</li>
+    <li class="目標-item">Morbi leo risus</li>
+    <li class="目標-item">Porta ac consectetur ac</li>
+    <li class="目標-item">Vestibulum at eros</li>
+  </ul>
+</div>
+
+<p>將以下的 "目標"，替換成 list-group-item-action 使其可用 hover</p>
+
+<div class="demo">
+  <div class="list-group">
+    <a href="#" class="list-group-item active">
+      Cras justo odio
+    </a>
+    <a href="#" class="list-group-item 目標">Dapibus ac facilisis in</a>
+    <a href="#" class="list-group-item 目標">Morbi leo risus</a>
+    <a href="#" class="list-group-item 目標">Porta ac consectetur ac</a>
+    <a href="#" class="list-group-item 目標 disabled">Vestibulum at eros</a>
+  </div>
+</div>
+
+<hr>
+
+<p>將以下的 "目標"，替換成不同色彩 (primary, secondary, success, danger, warning, info, light, dark)</p>
+
+<div class="demo">
+  <ul class="list-group">
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item list-group-item-目標">This is a primary list group item</li>
+    <li class="list-group-item list-group-item-目標">This is a secondary list group item</li>
+    <li class="list-group-item list-group-item-目標">This is a success list group item</li>
+    <li class="list-group-item list-group-item-目標">This is a danger list group item</li>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-目標">This is a warning list group item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-目標">This is a info list group item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-目標">This is a light list group item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-目標">This is a dark list group item</a>
+  </ul>
+</div>
+
+<h2>自訂內容</h2>
+
+<p>將以下的 "目標"，替換成 list-group 使其顯示正確</p>
+
+<div class="demo">
+  <div class="目標">
+    <a href="#" class="目標-item list-group-item-action flex-column align-items-start active">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">List group item heading</h5>
+        <small>3 days ago</small>
+      </div>
+      <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      <small>Donec id elit non mi porta.</small>
+    </a>
+    <a href="#" class="目標-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">List group item heading</h5>
+        <small class="text-muted">3 days ago</small>
+      </div>
+      <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      <small class="text-muted">Donec id elit non mi porta.</small>
+    </a>
+    <a href="#" class="目標-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">List group item heading</h5>
+        <small class="text-muted">3 days ago</small>
+      </div>
+      <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      <small class="text-muted">Donec id elit non mi porta.</small>
+    </a>
+  </div>
+</div>
+
+
+<p>將以下的 "目標"，替換成 data-toggle="list" 使其能夠運作</p>
+
+<div class="demo">
+  <div class="row">
+    <div class="col-4">
+      <div class="list-group" id="list-tab" role="tablist">
+        <a class="list-group-item list-group-item-action active" id="list-home-list" 目標 href="#list-home" role="tab" aria-controls="home">Home</a>
+        <a class="list-group-item list-group-item-action" id="list-profile-list" 目標 href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+        <a class="list-group-item list-group-item-action" id="list-messages-list" 目標 href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+        <a class="list-group-item list-group-item-action" id="list-settings-list" 目標 href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">1</div>
+        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">2</div>
+        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">3</div>
+        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">4</div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
