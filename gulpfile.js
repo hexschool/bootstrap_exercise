@@ -44,6 +44,7 @@ gulp.task('clean', function () {
 gulp.task('layout', function () {
   return gulp.src(['./source/**/*.ejs', './source/**/*.html'])
     .pipe($.plumber())
+    .pipe($.changed('public', { extension: '.html' }))
     .pipe($.frontMatter())
     .pipe($.layout(function (file) {
       return file.frontMatter

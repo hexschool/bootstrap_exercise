@@ -24,10 +24,8 @@ engine: ejs
       <input type="password" class="目標-control" id="exampleInputPassword1" placeholder="Password">
     </div>
     <div class="目標-check">
-      <label class="目標-check-label">
-        <input type="checkbox" class="目標-check-input">
-        Check me out
-      </label>
+      <input type="checkbox" class="目標-check-input" id="exampleCheck1">
+      <label class="目標-check-label" for="exampleCheck1">Check me out</label>
     </div>
     <div class="目標-group">
       <label for="exampleFormControlInput1">Email address</label>
@@ -113,19 +111,19 @@ engine: ejs
 
 <h2>checkbox, radio</h2>
 
-<p>將以下的 "目標"，替換成 form-check 使其顯示正確</p>
+<p>將以下的 "目標"，替換成 form-check 使其顯示正確(請注意 HTML 結構)</p>
 
 <div class="demo">
   <div class="目標">
-    <label class="form-check-label">
-      <input class="form-check-input" type="checkbox" value="">
-      Option one is this and that&mdash;be sure to include why it's great
+    <input class="目標-input" type="checkbox" value="" id="defaultCheck1">
+    <label class="目標-label" for="defaultCheck1">
+      Default checkbox
     </label>
   </div>
-  <div class="form-check disabled">
-    <label class="form-check-label">
-      <input class="form-check-input" type="radio" value="" disabled>
-      Option two is disabled
+  <div class="目標">
+    <input class="目標-input" type="checkbox" value="" id="defaultCheck2" disabled>
+    <label class="目標-label" for="defaultCheck2">
+      Disabled checkbox
     </label>
   </div>
 </div>
@@ -136,36 +134,30 @@ engine: ejs
 
 <div class="demo">
   <div class="form-check 目標">
-    <label class="form-check-label">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> 1
-    </label>
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+    <label class="form-check-label" for="inlineCheckbox1">1</label>
   </div>
-  <div class="form-check form-check-inline">
-    <label class="form-check-label">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> 2
-    </label>
+  <div class="form-check 目標">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+    <label class="form-check-label" for="inlineCheckbox2">2</label>
   </div>
-  <div class="form-check form-check-inline disabled">
-    <label class="form-check-label">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled> 3
-    </label>
+  <div class="form-check 目標">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+    <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
   </div>
 </div>
 
 <hr>
 <p>Without labels</p>
 
+<p>將以下的 "目標"，替換成 position-static 使其顯示正確</p>
 
 <div class="demo">
   <div class="form-check">
-    <label class="form-check-label">
-      <input class="form-check-input 目標" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-    </label>
+    <input class="form-check-input 目標" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
   </div>
   <div class="form-check">
-    <label class="form-check-label">
-      <input class="form-check-input 目標" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-    </label>
+    <input class="form-check-input 目標" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
   </div>
 </div>
 
@@ -220,8 +212,9 @@ engine: ejs
     </div>
     <div class="form-group">
       <div class="form-check">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox"> Check me out
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
         </label>
       </div>
     </div>
@@ -243,31 +236,31 @@ engine: ejs
         </div>
       </div>
       <div class="form-group row">
-        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+        <label for="inputPassword3" class="col-sm-2 目標">Password</label>
         <div class="col-sm-10">
           <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
         </div>
       </div>
       <fieldset class="form-group">
         <div class="row">
-          <legend class="col-form-legend col-sm-2">Radios</legend>
+          <legend class="目標 col-sm-2 pt-0">Radios</legend>
           <div class="col-sm-10">
             <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                Option one is this and that&mdash;be sure to include why it's great
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <label class="form-check-label" for="gridRadios1">
+                First radio
               </label>
             </div>
             <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                Option two can be something else and selecting it will deselect option one
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                Second radio
               </label>
             </div>
             <div class="form-check disabled">
-              <label class="form-check-label">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-                Option three is disabled
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+              <label class="form-check-label" for="gridRadios3">
+                Third disabled radio
               </label>
             </div>
           </div>
@@ -277,8 +270,9 @@ engine: ejs
         <div class="col-sm-2">Checkbox</div>
         <div class="col-sm-10">
           <div class="form-check">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox"> Check me out
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              Example checkbox
             </label>
           </div>
         </div>
@@ -292,6 +286,28 @@ engine: ejs
   </div>
 </div>
 
+<div class="demo">
+  <form>
+    <div class="form-group row">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label 目標-sm">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="colFormLabelLg" class="col-sm-2 col-form-label 目標-lg">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+      </div>
+    </div>
+  </form>
+</div>
 
 <h2>行內表單</h2>
 
@@ -300,21 +316,24 @@ engine: ejs
 <div class="demo">
   <form class="目標">
     <label class="sr-only" for="inlineFormInputName2">Name</label>
-    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInputName2" placeholder="Jane Doe">
+    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
 
     <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
-    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-      <div class="input-group-addon">@</div>
+    <div class="input-group mb-2 mr-sm-2">
+      <div class="input-group-prepend">
+        <div class="input-group-text">@</div>
+      </div>
       <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
     </div>
 
-    <div class="form-check mb-2 mr-sm-2 mb-sm-0">
-      <label class="form-check-label">
-        <input class="form-check-input" type="checkbox"> Remember me
+    <div class="form-check mb-2 mr-sm-2">
+      <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+      <label class="form-check-label" for="inlineFormCheck">
+        Remember me
       </label>
     </div>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary mb-2">Submit</button>
   </form>
 </div>
 
@@ -350,9 +369,10 @@ engine: ejs
           <option>Disabled select</option>
         </select>
       </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"> Can't check this
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+        <label class="form-check-label" for="disabledFieldsetCheck">
+          Can't check this
         </label>
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
@@ -468,15 +488,13 @@ engine: ejs
 <p>將以下的 "目標"，替換成 custom 使其顯示自訂的樣式</p>
 
 <div class="demo">
-  <label class="目標-control 目標-checkbox">
-    <input type="checkbox" class="目標-control-input">
-    <span class="目標-control-indicator"></span>
-    <span class="目標-control-description">Check this custom checkbox</span>
-  </label>
+  <div class="目標-control 目標-radio">
+    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+    <label class="目標-control-label" for="customRadio1">Toggle this custom radio</label>
+  </div>
 
-  <label class="目標-control 目標-radio">
-    <input id="radio3" name="radioDisabled" type="radio" class="目標-control-input">
-    <span class="目標-control-indicator"></span>
-    <span class="目標-control-description">Toggle this custom radio</span>
-  </label>
+  <div class="目標-control 目標-radio 目標-control-inline">
+    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+    <label class="目標-control-label" for="customRadioInline1">Toggle this custom radio</label>
+  </div>
 </div>
