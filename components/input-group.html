@@ -7,8 +7,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/stylesheets/all.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   </head>
   
@@ -177,56 +177,43 @@
 <p>將以下的 "目標"，替換成 input-group 使其顯示群組</p>
 
 <div class="demo">
-  <div class="目標">
-    <span class="目標-addon" id="basic-addon1">@</span>
+  <div class="目標 mb-3">
+    <div class="目標-prepend">
+      <span class="目標-text" id="basic-addon1">@</span>
+    </div>
     <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
   </div>
-  <br>
-  <div class="目標">
+
+  <div class="目標 mb-3">
     <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-    <span class="目標-addon" id="basic-addon2">@example.com</span>
+    <div class="目標-append">
+      <span class="目標-text" id="basic-addon2">@example.com</span>
+    </div>
   </div>
-  <br>
+
   <label for="basic-url">Your vanity URL</label>
-  <div class="目標">
-    <span class="目標-addon" id="basic-addon3">https://example.com/users/</span>
+  <div class="目標 mb-3">
+    <div class="目標-prepend">
+      <span class="目標-text" id="basic-addon3">https://example.com/users/</span>
+    </div>
     <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
   </div>
-  <br>
-  <div class="目標">
-    <span class="目標-addon">$</span>
+
+  <div class="目標 mb-3">
+    <div class="目標-prepend">
+      <span class="目標-text">$</span>
+    </div>
     <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-    <span class="目標-addon">.00</span>
-  </div>
-  <br>
-  <div class="目標">
-    <span class="目標-addon">$</span>
-    <span class="目標-addon">0.00</span>
-    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+    <div class="目標-append">
+      <span class="目標-text">.00</span>
+    </div>
   </div>
 
   <div class="目標">
-    <span class="目標-addon">
-      <input type="checkbox" aria-label="Checkbox for following text input">
-    </span>
-    <input type="text" class="form-control" aria-label="Text input with checkbox">
-  </div>
-  <div class="目標">
-    <span class="目標-btn">
-      <button class="btn btn-secondary" type="button">Hate it</button>
-    </span>
-    <input type="text" class="form-control" placeholder="Product name" aria-label="Product name">
-    <span class="目標-btn">
-      <button class="btn btn-secondary" type="button">Love it</button>
-    </span>
-  </div>
-
-  <div class="目標">
-    <span class="目標-addon">
-      <input type="checkbox" aria-label="Checkbox for following text input">
-    </span>
-    <span class="目標-addon">$</span>
-    <input type="text" class="form-control" aria-label="Text input with checkbox">
+    <div class="目標-prepend">
+      <span class="目標-text">With textarea</span>
+    </div>
+    <textarea class="form-control" aria-label="With textarea"></textarea>
   </div>
 </div>
 
@@ -237,13 +224,39 @@
 
 <div class="demo">
   <div class="input-group input-group-目標">
-    <span class="input-group-addon" id="sizing-addon1">@</span>
-    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="sizing-addon1">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">@</span>
+    </div>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="inputGroup-sizing-sm">
   </div>
   <br>
   <div class="input-group input-group-目標">
-    <span class="input-group-addon" id="sizing-addon2">@</span>
-    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="sizing-addon2">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-lg">@</span>
+    </div>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="inputGroup-sizing-lg">
+  </div>
+</div>
+
+<h2>Addon</h2>
+
+<p>將以下的 "目標"，替換成不同 prepend, append</p>
+
+<div class="demo">
+  <div class="input-group mb-3">
+    <div class="input-group-目標">
+      <span class="input-group-text">$</span>
+      <span class="input-group-text">0.00</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  </div>
+
+  <div class="input-group">
+    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+    <div class="input-group-目標">
+      <span class="input-group-text">$</span>
+      <span class="input-group-text">0.00</span>
+    </div>
   </div>
 </div>
 
@@ -253,7 +266,7 @@
 
 <div class="demo">
   <div class="input-group">
-    <div class="input-group-btn">
+    <div class="input-group-prepend">
       <button type="button" class="btn btn-secondary dropdown-toggle" 目標 aria-haspopup="true" aria-expanded="false">
         Action
       </button>

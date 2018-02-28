@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>網格</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/stylesheets/all.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </head>
+  
+  <body class="over-flow-x">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">Bootstrap 練習手冊</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/layout/media-object.html">Layout</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/components/alerts.html">Components</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/utilities/borders.html">Utilities</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    <div class="container my-5">
+      <div class="row">
+        
+          <div class="col-md-3">
+            
+<div class="list-group">
+  
+    
+      <a href="/layout/media-object.html"  class="list-group-item">
+        Media object
+      </a>
+    
+  
+    
+      <a href="/layout/grid.html"  class="list-group-item active">
+        網格
+      </a>
+    
+  
+</div>
+          </div>
+        
+        <div class="col-md-9 post">      
+          <!-- 練習開始 -->
+          <h1 class="mt-0">網格</h1>
+          
+<style>
+.demo .row>.col, .demo .row>[class^=col-] {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid rgba(86,61,124,.2);
+}
+
+.h300 {
+  height: 300px;
+}
+</style>
+
+<p>將以下的 "目標"，替換成 row 使其顯示正確</p>
+
+<div class="demo">
+  <div class="container">
+    <div class="目標">
+      <div class="col-sm">
+        One of three columns
+      </div>
+      <div class="col-sm">
+        One of three columns
+      </div>
+      <div class="col-sm">
+        One of three columns
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>打開以下註解顯示新的項目</p>
+
+<div class="demo">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        1 of 3
+      </div>
+      <div class="col">
+        2 of 3
+      </div>
+      <!-- <div class="col">
+        3 of 3
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<p>打開以下註解使其可分欄</p>
+
+<div class="demo">
+  <div class="container">
+    <div class="row">
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+      <!-- <div class="w-100"></div> -->
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+    </div>
+  </div>
+</div>
+
+<p>將以下的 "目標"，替換成 1 ~ 12 不等的數值觀察其變化</p>
+
+<div class="demo">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        1 of 3
+      </div>
+      <div class="col-目標">
+        2 of 3 (wider)
+      </div>
+      <div class="col">
+        3 of 3
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>將以下的 "目標"，替換成 auto</p>
+
+<div class="demo">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-2">
+        1 of 3
+      </div>
+      <div class="col-sm-目標">
+        Variable width content
+      </div>
+      <div class="col col-lg-2">
+        3 of 3
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        1 of 3
+      </div>
+      <div class="col-md-目標">
+        Variable width content
+      </div>
+      <div class="col col-lg-2">
+        3 of 3
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>將以下的 "目標"，替換成相加總和為 12 的數值觀察其變化</p>
+
+<div class="demo">
+  <div class="container">
+    <div class="row">
+      <div class="col-目標">col</div>
+      <div class="col-目標">col</div>
+    </div>
+  </div>
+</div>
+
+
+<p>將以下的 "目標"，替換成 md, sm 並調整視窗大小觀察變化</p>
+
+<div class="demo">
+  <div class="container">
+    <div class="row">
+      <div class="col-目標-8">col-sm-8</div>
+      <div class="col-目標-4">col-sm-4</div>
+    </div>
+  </div>
+</div>
+
+<h2>垂直對齊</h2>
+
+<p>將以下的 "目標"，替換成 start, center, end 並調整視窗大小觀察變化</p>
+
+<div class="demo">
+  <div class="container bg-light">
+    <div class="row align-items-目標 h300">
+      <div class="col">
+        One of three columns
+      </div>
+      <div class="col">
+        One of three columns
+      </div>
+      <div class="col">
+        One of three columns
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>將以下的 "目標"，替換成 start, center, end 並調整視窗大小觀察變化</p>
+
+<div class="demo">
+  <div class="container bg-light">
+    <div class="row h300">
+      <div class="col align-self-目標">
+        One of three columns
+      </div>
+      <div class="col align-self-目標">
+        One of three columns
+      </div>
+      <div class="col align-self-目標">
+        One of three columns
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>水平對齊</h2>
+
+<p>將以下的 "目標"，替換成 start, center, end 並調整視窗大小觀察變化</p>
+
+<div class="demo">
+  <div class="container bg-light">
+    <div class="row justify-content-目標">
+      <div class="col-4">
+        One of two columns
+      </div>
+      <div class="col-4">
+        One of two columns
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>No gutters</h2>
+
+<p>將以下的 "目標"，替換成 no-gutters。</p>
+
+<div class="demo">
+  <div class="container bg-light">
+    <div class="row 目標">
+      <div class="col-12 col-sm-6 col-md-8">.col-12 .col-sm-6 .col-md-8</div>
+      <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    </div>
+  </div>
+</div>
+
+<h2>排序</h2>
+
+<p>將以下的 "目標"，替換成 1~12 的數值或 first, last。</p>
+
+<div class="demo">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        First, but unordered
+      </div>
+      <div class="col order-目標">
+        Second, but last
+      </div>
+      <div class="col order-目標">
+        Third, but first
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>推移</h2>
+
+<p>將以下的 "目標"，替換成 offset。</p>
+
+<div class="demo">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4 目標-md-4">.col-md-4 .offset-md-4</div>
+    </div>
+  </div>
+</div>
+
+<p>將以下的 "目標"，替換成 ml-auto。</p>
+
+<div class="demo">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4 目標">.col-md-4 .ml-auto</div>
+    </div>
+  </div>
+</div> 
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
